@@ -1,0 +1,63 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore environment variables and secrets
+#.env
+#*.env
+Env3_10/
+
+# Ignore Django static and media files
+/static/
+/staticfiles/
+media/
+
+# Ignore SQLite DB (if used for dev)
+*.sqlite3
+
+# Ignore Django migration history (optional)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# Keep init files but ignore the rest of the migrations
+**/migrations/[!__init__]*.py
+
+# VS Code settings
+.vscode/
+
+# MacOS and system files
+.DS_Store
+
+# Docker-related
+*.log
+docker-compose.override.yml
+docker-compose.prod.yml
+build/
+.env.dev
+.env.prod
+
+# Ignore compiled assets
+*.tgz
+*.tar.gz
+*.zip
+
+# Ignore node_modules if using frontend
+node_modules/
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# Ignore compiled python egg and pip files
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Ignore postgres
+postgres_data/
+
+# ignore useful
+useful/
+/backend/staticfiles/
