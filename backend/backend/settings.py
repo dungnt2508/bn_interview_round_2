@@ -87,6 +87,7 @@ INSTALLED_APPS = [
     'django_json_widget',
     'drf_yasg',
     'user',
+    'accounting'
 ]
 
 MIDDLEWARE = [
@@ -123,27 +124,27 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': config('POSTGRES_DB'),
-#         'USER': config('POSTGRES_USER'),
-#         'PASSWORD': config('POSTGRES_PASSWORD'),
-#         'HOST': config('POSTGRES_HOST'),
-#         'PORT': config('POSTGRES_PORT'),
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bn_db',
-        'USER': 'bn_user',
-        'PASSWORD': 'abcd@1234',
-        'HOST': 'localhost',
-        'PORT': 5433,
+        'NAME': config('POSTGRES_DB'),
+        'USER': config('POSTGRES_USER'),
+        'PASSWORD': config('POSTGRES_PASSWORD'),
+        'HOST': config('POSTGRES_HOST'),
+        'PORT': config('POSTGRES_PORT'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'bn_db',
+#         'USER': 'bn_user',
+#         'PASSWORD': 'abcd@1234',
+#         'HOST': 'localhost',
+#         'PORT': 5433,
+#     }
+# }
 
 
 # Password validation
