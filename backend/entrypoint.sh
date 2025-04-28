@@ -20,6 +20,9 @@ python manage.py makemigrations --noinput
 echo "🔄 Running migrate..."
 python manage.py migrate --noinput
 
+echo "🔄 Running script add data to Role model "
+python manage.py seed_roles
+
 # ================================
 # STEP 3: Create superuser
 # ================================
